@@ -1,0 +1,29 @@
+<html>  
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+/*
+            function deneme()
+            {
+                document.write("limoncuBoy <br/>");
+            }
+            setInterval("deneme()",1000); //ekrana devamlı belirli bir süreyle yazdırma. */
+
+            function zaman() //Saat denemesi..
+            {
+                var simdi = new Date();
+
+                var saat = simdi.getHours();
+                var dakika = simdi.getMinutes();
+                var saniye = simdi.getSeconds();
+
+                document.write(saat +":" +dakika +":"+saniye+"<br/>");
+            }
+            
+            setInterval("zaman()",1000);
+
+        </script>
+    </body>
+</html>
