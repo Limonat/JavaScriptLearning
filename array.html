@@ -1,0 +1,33 @@
+<html>  
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //Array örneği
+        //Kullanış-1
+            //var insan = new Array("Ali","Veli","Hakan","Ece","Gökçe");
+            //document.write(insan[0]);
+
+        //Kullanış-2
+          /*  var hayvan = new Array();
+            hayvan[0] ="Aslan";
+            hayvan[1] ="Kedi";
+            var x =5;
+            document.write(hayvan[1] + x);
+
+        */
+
+            var ogretmenler = new Array("Hasan","Ali","Ece", "Can");
+            var polis =new Array("Neslihan", "Neslişah","Adnan", "Mükerrem");
+
+            document.write(ogretmenler.length);
+            document.write("<br/>");
+            document.write(polis.length);
+            document.write("<br/>");
+            //Öğretmenler ile polisleri birleştiriyoruz.
+            var insan = ogretmenler.concat(polis);
+
+            document.write(insan[5]);
+         </script>
+    </body>
+</html>

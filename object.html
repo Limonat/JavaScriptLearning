@@ -1,0 +1,32 @@
+<html>  
+    <head>
+        <!--Burada Obje/Nesne özellikleri -->
+        <script>
+            function kisi(isim, yas){
+                this.isim = isim;
+                // this ile function dışında tanımladığımız isim parametresine hitap etmektedir.
+                this.yas = yas;
+
+                }
+                
+            var oguzhan = new kisi("Oğuzhan", 21);
+            var ali = new kisi("Ali", 25);
+            var ece = new kisi("Ece", 33);
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">         
+        // var jshocam = "JShocam'a hoşgeldiniz";
+
+         //document.write(jshocam.length);
+         /*
+            yukarda jshocam'ın(nesnenin) bir özelliğini kullandık,
+            write'da bir nesne tabanlıdır.
+            Nesneler özellikler ve metodlardan ibarettir.
+         */
+         document.write(oguzhan.isim +"<br/>");
+         document.write(ali.yas +"<br/>" );
+         document.write(ece.isim + ece.yas +"<br/>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>  
+    <head>
+        <!--Burada Obje/Nesne özellikleri -->
+        <script type="text/javascript">
+         //Constructor, bir program çalıştığında ilk çalışan metod.
+         function kisi(isim,yas){
+            this.isim = isim;
+            this.yas = yas;
+            this.ortalamaHayatSuresi = ortYasamSuresi;
+            //Yukardaki ortalamaHayatSuresi değişkenine ortYasamSuresi
+            //metodu/nesnesi atandı.
+         }
+         function ortYasamSuresi()
+         {
+             var ortYil = 65 - this.yas;
+
+             return ortYil;
+         }
+         var Ayya = new kisi("Ayya",21);
+         var Jenny = new kisi("Jenny",19);
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write(Ayya.ortalamaHayatSuresi());
+            //ortalamaHayatSuresi() bu şekilde yazacaksın çünkü metod tanımlıyorsun.            
+        </script>
+    </body>
+</html>
