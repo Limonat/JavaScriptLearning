@@ -1,0 +1,23 @@
+<!DOCUMENT HTML>
+<html>  
+    <head>
+        <script type="text/javascript">
+
+            function onaylama(){
+
+                if(document.JSHocamForm.kutu.checked)
+                    alert("Checkbox Tıklandı!");
+                else
+                    alert("Lütfen önce checkbox'a tıkla!!");
+            }
+        </script>
+    </head>
+    <body>
+      
+        <form name="JSHocamForm">
+           <input type="checkbox" name="kutu">
+           <input type="button" value="Gonder" onclick="onaylama()">
+        </form>
+        
+    </body>
+</html>

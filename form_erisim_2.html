@@ -1,0 +1,20 @@
+<!DOCUMENT HTML>
+<html>  
+    <head>
+
+    </head>
+    <body>
+      
+        <form name="JSHocam">
+            İsim  :<input type="text" name="isim"/>
+            Şifre :<input type="password" name="sifre"/>
+            <input type="button" value="Gönder"/>
+        </form>
+        <script type="text/javascript">
+
+        //var jsho = document.forms[0].elements[0].name; Bunun bir başka yazımı aşağıdakidir.
+            var jsho = document.JSHocam.isim.name;
+        document.write(jsho);
+         </script>
+    </body>
+</html>

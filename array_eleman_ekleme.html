@@ -3,8 +3,22 @@
     </head>
     <body>
         <script type="text/javascript">
-            
 
+            var rakamlar = new Array(3);
+
+            for (i=0; i<3; i++)
+            {
+                rakamlar[i] = prompt("Array'a rakam ekleyiniz.",""); // ,"" böyle yapınca içerisine bir şey yazmasın boş kalsın.DEDİ. 
+            }
+
+            document.write(rakamlar[0] + rakamlar[1] + rakamlar[2]);
+
+            /*
+            //prompt ekrana dialog box çıkartır.
+            var JShocam = prompt("Merhaba JSHocam, sisteme girişiniz gerçekleştirildi.");
+            //aşağıdaki gibi de çalışabilir.
+                document.write(JShocam); //Girilen değeri saklıyor.
+            */
          </script>
     </body>
 </html>
